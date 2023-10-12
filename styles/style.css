@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .blockquote {
 }
 
 .content-section__subtitle {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', serif;
     font-size: 28px;
     font-weight: 500;
     line-height: 1.15;
@@ -74,10 +74,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .blockquote {
 
 .header__menu-list{
     list-style-type: none;
-}
-
-.header__menu-item:not(:last-child) {
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .header__menu-link {
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .blockquote {
 /* cover */
 
 .cover {
-    padding: 7px 0 0 20px;
+    padding: 7px 24px 0 20px;
     background-image: url("../images/cover.svg");
     background-size: 95% auto;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .blockquote {
 }
 
 .cover__title {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', serif;
     font-size: 72px;
     font-weight: 400;
     line-height: 1;
@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .blockquote {
 
 .intro__heading {
     display: flex;
+    justify-content: space-between;
 
     font-size: 16px;
     font-weight: 400;
@@ -162,16 +163,15 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .blockquote {
 
 .card-list {
     width: 319px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 36px;
 }
 
 .card {
     padding: 20px;
     border-radius: 30px;
-    margin-bottom: 32px;
-}
-
-.card:last-child {
-    margin-bottom: 0;
 }
 
 .card_theme_dark {
@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .blockquote {
 .card__title {
     margin-bottom: 20px;
 
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 1.35;
@@ -223,22 +223,18 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .blockquote {
 }
 
 .footer__links {
+    display: flex;
+    gap: 16px;
+    
     list-style-type: none;
-    
 }
 
-.footer__links li {
-    display: inline;
-    margin-left: 16px;
-    
-}
-
-.footer__links li a {
+.footer__links a {
     text-decoration: none;
     color: #F5F5F5;
 }
 
-.footer__links li a:hover {
+.footer__links a:hover {
     color: #F5F5F5;
     text-decoration: underline;
 }
